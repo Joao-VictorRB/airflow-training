@@ -18,6 +18,6 @@ with DAG(
     task3 = BashOperator(task_id='tsk3',bash_command="sleep 5")
 
     #Fan-out
-    #Quando uma DAG/tarefa dispara ou se ramifica para duas ou mais tarefas em paralelo.
+    #Quando uma DAG/tarefa dispara ou se ramifica para duas ou mais tarefas em paralelo
 
     task1 >> [task2 , task3]
